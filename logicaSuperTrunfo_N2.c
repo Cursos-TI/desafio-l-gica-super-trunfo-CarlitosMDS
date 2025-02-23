@@ -2,6 +2,7 @@
 
 int main() {
 
+    // declarando as variaveis do código.
     char estado1[50], nomCid1[50], estado2[50], nomCid2[50];
     int codCid1, pt1, codCid2, pt2, opcao;
     float pop1, area1, pib1, pop2, area2, pib2;
@@ -9,6 +10,7 @@ int main() {
 
     printf("*** Bem Vindos ao COMPARADOR!!*** \n");
 
+    //capitando as informações do primeiro jogador
     printf("Digite o Código da Cidade:\n");
     scanf("%d", &codCid1);
     printf("Digite o nome do Estado:\n");
@@ -23,7 +25,8 @@ int main() {
     scanf("%f", &pib1);
     printf("Digite os Pontos Turisticos:\n");
     scanf("%d", &pt1);
-
+ 
+    //capitando as informções do segundo jogador
     printf("***Agora os dados da outra CARTA***\n");
     printf("Digite o Código da Cidade:\n");
     scanf("%d", &codCid2);
@@ -40,6 +43,7 @@ int main() {
     printf("Digite os Pontos Turisticos:\n");
     scanf("%d", &pt2);
 
+    //Solicitei ao jogador o atributo para comparação
     printf("Escolha qual atributo voce quer comparar\n");
     printf("1. Populção:\n");
     printf("2. Área:\n");
@@ -47,6 +51,9 @@ int main() {
     printf("4. Pontos Turisticos:\n");
     printf("Digite a sua escolha!!:\n");
     scanf("%d",&opcao);
+
+
+    //utilizei o sistema de Switch para da funcionalidade ao menu que foi fornecido ao jogador
 
     switch (opcao){
     case 1:
